@@ -1,0 +1,19 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a service request and then 
+The AMF sent deregistration accept to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: service request
+Subsequent Downlink message from the AMF: deregistration accept
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Completed
+UE provided: 5GMM status (Message type non-existent or not implemented)
+
+The packet capture during the test using wireshark is: 
+32.83465123176575	UE to 	AMF	InitialUEMessage, Service request, Service request [RRCEstablishmentCause=mo-Data]
+32.83533310890198	AMF to 	UE 	SACK (Ack=38, Arwnd=106496) , DownlinkNASTransport, Deregistration accept (UE terminated)
+33.03721022605896	UE to 	AMF	UplinkNASTransport, 5GMM status (Message type non-existent or not implemented)
+35.08255314826965	UE to 	AMF	InitialUEMessage, Service request, Service request [RRCEstablishmentCause=mo-Data]
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

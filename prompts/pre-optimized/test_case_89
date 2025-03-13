@@ -1,0 +1,22 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a service request and then 
+The AMF sent authentication request to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: service request
+Subsequent Downlink message from the AMF: authentication request
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Completed
+ABBA: 1010
+RAND: 7479eaccb74fb3be01aa8b2b6ff1abcb
+AUTN: dd84e27507488000bb521f82528f6f6e
+ngKSI_TSC: Native security context
+ngKSI_KSI: 2
+UE provided: No response
+
+The packet capture during the test using wireshark is: 
+16.614274978637695	UE to 	AMF	InitialUEMessage, Service request, Service request [RRCEstablishmentCause=mo-Data]
+16.614504098892212	AMF to 	UE 	SACK (Ack=22, Arwnd=106496) , DownlinkNASTransport, Authentication request
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

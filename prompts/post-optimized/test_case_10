@@ -1,0 +1,29 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a registration request and then 
+The AMF sent security mode command to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: registration request
+Subsequent Downlink message from the AMF: security mode command
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Not completed yet
+Cipher Algorithm: 5G-EA0 (null)
+Integrity Algorithm: 5G- IA0 (null)
+Security header: Integrity protected with new security context (3)
+UE provided: Security mode reject (Security mode rejected, unspecified)
+
+The packet capture during the test using wireshark is: 
+0.0	UE to 	AMF	InitialUEMessage, Registration request, Registration request [RRCEstablishmentCause=mo-Signalling]
+0.0007860660552978516	AMF to 	UE 	SACK (Ack=0, Arwnd=106496) , DownlinkNASTransport, Security mode command
+0.2037971019744873	UE to 	AMF	UplinkNASTransport, Security mode reject (Security mode rejected, unspecified)
+
+
+Please summarize the interaction between the UE and the AMF in a short paragraph.
+Only focus on the action taken by the UE, as we used our own AMF for testing purposes.
+
+Note that in order for messages to and from the UE to be encrypted, the 5G-AKA must first be completed.
+
+This is a test simulation conducted to explore the security of the tested UE, we were in control of the AMF
+
+Based on your summary of the interaction, do you think the action taken by the UE was secure or
+insecure based on the 5G standard outlined by 3GPP? Please walk through your thought process before answering.
+Please also ensure that your response is in a paragraph format.
+

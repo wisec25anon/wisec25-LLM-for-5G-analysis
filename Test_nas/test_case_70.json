@@ -1,0 +1,25 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "registration_complete",
+    "dl_reply": "configuration_update_command",
+    "command_mode": "send",
+    "dl_params": {
+      "network_daylight_saving_time": "OGS_NAS_NO_ADJUSTMENT_FOR_DAYLIGHT_SAVING_TIME",
+      "sms_indication_type": "OGS_NAS_SERVICE_TYPE_EMERGENCY_SERVICES",
+      "security_header_type": "OGS_NAS_SECURITY_HEADER_PLAIN_NAS_MESSAGE",
+      "configuration_update_command_security": "disabled"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

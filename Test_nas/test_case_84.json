@@ -1,0 +1,25 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "ul_nas_transport",
+    "dl_reply": "security_mode_command",
+    "command_mode": "send",
+    "dl_params": {
+      "ngksi_tsc": "0",
+      "abba": "2",
+      "nas_security_encryption": "OGS_NAS_SECURITY_ALGORITHMS_NEA4",
+      "imeisv_request": "OGS_NAS_IMEISV_NOT_REQUESTED"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

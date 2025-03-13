@@ -1,0 +1,19 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a security mode complete and then 
+The AMF sent service reject to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: security mode complete
+Subsequent Downlink message from the AMF: service reject
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Completed
+5GMM Cause: 111
+UE provided: Deregistration request (UE originating)
+
+The packet capture during the test using wireshark is: 
+0.15993309020996094	UE to 	AMF	SACK (Ack=2, Arwnd=106496) , UplinkNASTransport, Security mode complete, Registration request
+0.16013097763061523	AMF to 	UE 	SACK (Ack=3, Arwnd=106496) , DownlinkNASTransport, Service reject (Protocol error, unspecified)
+0.3612639904022217	UE to 	AMF	UplinkNASTransport, Deregistration request (UE originating)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

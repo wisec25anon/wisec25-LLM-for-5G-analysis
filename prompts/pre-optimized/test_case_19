@@ -1,0 +1,18 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a identity response and then 
+The AMF sent configuration update command to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: identity response
+Subsequent Downlink message from the AMF: configuration update command
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Not completed yet
+Security header: Plain NAS message (0)
+UE provided: No response
+
+The packet capture during the test using wireshark is: 
+0.038893938064575195	UE to 	AMF	SACK (Ack=0, Arwnd=106496) , UplinkNASTransport, Identity response
+0.039427995681762695	AMF to 	UE 	SACK (Ack=1, Arwnd=106496) , DownlinkNASTransport, Configuration update command
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

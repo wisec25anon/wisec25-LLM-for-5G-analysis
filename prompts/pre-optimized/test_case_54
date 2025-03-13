@@ -1,0 +1,22 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a security mode complete and then 
+The AMF sent security mode command to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: security mode complete
+Subsequent Downlink message from the AMF: security mode command
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Completed
+ABBA: 3232
+Cipher Algorithm: 5G-EA0 (null)
+Integrity Algorithm: 128-5G-IA2
+Security header: Integrity protected with new security context (3)
+UE provided: Security mode complete
+
+The packet capture during the test using wireshark is: 
+0.15980100631713867	UE to 	AMF	SACK (Ack=2, Arwnd=106496) , UplinkNASTransport, Security mode complete, Registration request
+0.16017889976501465	AMF to 	UE 	SACK (Ack=3, Arwnd=106496) , DownlinkNASTransport, Security mode command
+0.3686530590057373	UE to 	AMF	UplinkNASTransport, Security mode complete, Registration request
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

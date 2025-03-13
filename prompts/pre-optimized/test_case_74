@@ -1,0 +1,19 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a ul nas transport and then 
+The AMF sent deregistration accept to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: ul nas transport
+Subsequent Downlink message from the AMF: deregistration accept
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Completed
+UE provided: 5GMM status (Message type non-existent or not implemented)
+
+The packet capture during the test using wireshark is: 
+2.2634079456329346	UE to 	AMF	UplinkNASTransport, Registration complete, UplinkNASTransport, UL NAS transport, PDU session establishment request
+2.263942003250122	AMF to 	UE 	SACK (Ack=11, Arwnd=106401) , DownlinkNASTransport, Configuration update command
+2.2643349170684814	AMF to 	UE 	DownlinkNASTransport, Deregistration accept (UE terminated)
+2.467484951019287	gNB to 	AMF	UEContextReleaseComplete, UplinkNASTransport, 5GMM status (Message type non-existent or not implemented)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

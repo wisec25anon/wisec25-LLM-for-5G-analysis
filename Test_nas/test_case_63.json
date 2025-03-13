@@ -1,0 +1,23 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "registration_complete",
+    "dl_reply": "authentication_request",
+    "command_mode": "send",
+    "dl_params": {
+      "ngksi_tsc": "0",
+      "abba": "0101"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

@@ -1,0 +1,20 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a ul nas transport and then 
+The AMF sent configuration update command to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: ul nas transport
+Subsequent Downlink message from the AMF: configuration update command
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Completed
+Security header: Plain NAS message (0)
+UE provided: Deregistration request (UE originating)
+
+The packet capture during the test using wireshark is: 
+2.5163559913635254	UE to 	AMF	UplinkNASTransport, Registration complete, UplinkNASTransport, UL NAS transport, PDU session establishment request
+2.5165369510650635	AMF to 	UE 	SACK (Ack=11, Arwnd=106401) , DownlinkNASTransport, Configuration update command
+2.5166728496551514	AMF to 	UE 	DownlinkNASTransport, Configuration update command
+2.7203638553619385	UE to 	AMF	UplinkNASTransport, Deregistration request (UE originating)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

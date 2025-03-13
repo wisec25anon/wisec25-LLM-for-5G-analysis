@@ -1,0 +1,22 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "authentication_response",
+    "dl_reply": "service_reject",
+    "command_mode": "send",
+    "dl_params": {
+      "t3448_value": "100"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

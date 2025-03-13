@@ -1,0 +1,19 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a ul nas transport and then 
+The AMF sent identity request to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: ul nas transport
+Subsequent Downlink message from the AMF: identity request
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Completed
+Requested identity from the UE: IMEISV
+UE provided: No response
+
+The packet capture during the test using wireshark is: 
+2.197134017944336	UE to 	AMF	UplinkNASTransport, Registration complete, UplinkNASTransport, UL NAS transport, PDU session establishment request, UplinkNASTransport, Deregistration request (UE originating)
+2.197467088699341	AMF to 	UE 	SACK (Ack=11, Arwnd=106334) , DownlinkNASTransport, Configuration update command
+2.1975760459899902	AMF to 	UE 	DownlinkNASTransport, Identity request
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

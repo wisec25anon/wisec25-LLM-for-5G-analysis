@@ -1,0 +1,19 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a ul nas transport and then 
+The AMF sent service reject to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: ul nas transport
+Subsequent Downlink message from the AMF: service reject
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Completed
+5GMM Cause: 111
+UE provided: No response
+
+The packet capture during the test using wireshark is: 
+0.5082509517669678	UE to 	AMF	UplinkNASTransport, Registration complete, UplinkNASTransport, UL NAS transport, PDU session establishment request, UplinkNASTransport, Deregistration request (UE originating)
+0.5084729194641113	AMF to 	UE 	SACK (Ack=7, Arwnd=106334) , DownlinkNASTransport, Configuration update command
+0.5085830688476562	AMF to 	UE 	DownlinkNASTransport, Service reject (Protocol error, unspecified)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

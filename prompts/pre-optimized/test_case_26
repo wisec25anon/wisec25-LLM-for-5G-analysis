@@ -1,0 +1,22 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a identity response and then 
+The AMF sent security mode command to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: identity response
+Subsequent Downlink message from the AMF: security mode command
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Not completed yet
+ABBA: 3232
+Cipher Algorithm: 5G-EA4
+Integrity Algorithm: 128-5G-IA1
+Security header: Integrity protected with new security context (3)
+UE provided: Security mode reject (Security mode rejected, unspecified)
+
+The packet capture during the test using wireshark is: 
+0.03993701934814453	UE to 	AMF	SACK (Ack=0, Arwnd=106496) , UplinkNASTransport, Identity response
+0.04126906394958496	AMF to 	UE 	SACK (Ack=1, Arwnd=106496) , DownlinkNASTransport, Security mode command
+0.24338102340698242	UE to 	AMF	UplinkNASTransport, Security mode reject (Security mode rejected, unspecified)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

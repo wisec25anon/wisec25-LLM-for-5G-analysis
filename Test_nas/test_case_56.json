@@ -1,0 +1,25 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "security_mode_complete",
+    "dl_reply": "service_reject",
+    "command_mode": "send",
+    "dl_params": {
+      "gmm_cause": "OGS_5GMM_CAUSE_MAXIMUM_DATA_RATE_PER_UE_FOR_USER_PLANE_INTEGRITY_PROTECTION_IS_TOO_LOW",
+      "security_header_type": "OGS_NAS_SECURITY_HEADER_INTEGRITY_PROTECTED_AND_CIPHERED",
+      "t3346_value": "100",
+      "t3448_value": "100"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

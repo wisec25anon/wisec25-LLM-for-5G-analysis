@@ -1,0 +1,22 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a ul nas transport and then 
+The AMF sent security mode command to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: ul nas transport
+Subsequent Downlink message from the AMF: security mode command
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Completed
+ABBA: 3200
+Cipher Algorithm: 5G-EA6
+Integrity Algorithm: 128-5G-IA1
+Security header: Plain NAS message (0)
+UE provided: No response
+
+The packet capture during the test using wireshark is: 
+5.633437156677246	UE to 	AMF	UplinkNASTransport, UL NAS transport, PDU session establishment request
+5.634006023406982	AMF to 	UE 	SACK (Ack=11, Arwnd=106496) , DownlinkNASTransport, Security mode command
+5.634031057357788	UE to 	AMF	SACK (Ack=8, Arwnd=106454) , UplinkNASTransport, Deregistration request (UE originating)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

@@ -1,0 +1,23 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "registration_request",
+    "dl_reply": "registration_reject",
+    "command_mode": "send",
+    "dl_params": {
+      "t3346_value": "100",
+      "t3502_value": "100"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

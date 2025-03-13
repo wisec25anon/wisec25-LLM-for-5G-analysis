@@ -1,0 +1,19 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a security mode complete and then 
+The AMF sent gmm status to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: security mode complete
+Subsequent Downlink message from the AMF: gmm status
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Completed
+5GMM Cause: 6
+UE provided: Deregistration request (UE originating)
+
+The packet capture during the test using wireshark is: 
+0.16021108627319336	UE to 	AMF	SACK (Ack=2, Arwnd=106496) , UplinkNASTransport, Security mode complete, Registration request
+0.1606900691986084	AMF to 	UE 	SACK (Ack=3, Arwnd=106496) , DownlinkNASTransport, 5GMM status (Illegal ME)
+0.36391305923461914	UE to 	AMF	UplinkNASTransport, Deregistration request (UE originating)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

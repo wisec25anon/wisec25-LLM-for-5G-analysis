@@ -1,0 +1,23 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "service_request",
+    "dl_reply": "gmm_status",
+    "command_mode": "send",
+    "dl_params": {
+      "gmm_cause": "OGS_5GMM_CAUSE_CONDITIONAL_IE_ERROR",
+      "security_header_type": "OGS_NAS_SECURITY_HEADER_FOR_SERVICE_REQUEST_MESSAGE"
+    }
+  }
+]

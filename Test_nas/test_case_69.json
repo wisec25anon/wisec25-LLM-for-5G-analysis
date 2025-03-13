@@ -1,0 +1,23 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "registration_complete",
+    "dl_reply": "service_accept",
+    "command_mode": "send",
+    "dl_params": {
+      "pdu_session_status_psi": "2",
+      "t3448_value": "100"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

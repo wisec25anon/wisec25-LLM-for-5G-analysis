@@ -1,0 +1,22 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "identity_response",
+    "dl_reply": "deregistration_accept",
+    "command_mode": "send",
+    "dl_params": {
+      "security_header_type": "OGS_NAS_SECURITY_HEADER_INTEGRITY_PROTECTED"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

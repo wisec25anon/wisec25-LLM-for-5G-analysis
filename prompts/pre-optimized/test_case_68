@@ -1,0 +1,19 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a registration complete and then 
+The AMF sent configuration update command to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: registration complete
+Subsequent Downlink message from the AMF: configuration update command
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Completed
+Security header: Integrity protected and ciphered (2)
+UE provided: Configuration update complete
+
+The packet capture during the test using wireshark is: 
+2.427475929260254	UE to 	AMF	UplinkNASTransport, Registration complete, UplinkNASTransport, UL NAS transport, PDU session establishment request
+2.427738904953003	AMF to 	UE 	SACK (Ack=12, Arwnd=106401) , DownlinkNASTransport, Configuration update command
+2.6314868927001953	UE to 	AMF	UplinkNASTransport, Configuration update complete
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

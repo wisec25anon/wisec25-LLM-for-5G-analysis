@@ -1,0 +1,29 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "security_mode_complete",
+    "dl_reply": "deregistration_request",
+    "command_mode": "send",
+    "dl_params": {
+      "gmm_cause": "OGS_5GMM_CAUSE_ROAMING_NOT_ALLOWED_IN_TA",
+      "security_header_type": "OGS_NAS_SECURITY_HEADER_INTEGRITY_PROTECTED_AND_CIPHERED_WITH_NEW_SECURITY_CONTEXT",
+      "t3346_value": "100",
+      "de_registration_type.switch_off": "1",
+      "de_registration_type.tsc": "0",
+      "de_registration_type.ksi": "7",
+      "de_registration_type.re_registration_required": "OpenAPI_deregistration_reason_MT_STREAMING",
+      "de_registration_type.access_type": "OGS_ACCESS_TYPE_BOTH_3GPP_AND_NON_3GPP"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

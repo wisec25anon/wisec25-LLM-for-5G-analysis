@@ -1,0 +1,23 @@
+[
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  },
+  {
+    "ue_ul_handle": "registration_request",
+    "dl_reply": "configuration_update_command",
+    "command_mode": "send",
+    "dl_params": {
+      "sms_indication_type": "OGS_NAS_SERVICE_TYPE_EMERGENCY_SERVICES",
+      "security_header_type": "OGS_NAS_SECURITY_HEADER_FOR_SERVICE_REQUEST_MESSAGE"
+    }
+  },
+  {
+    "ue_ul_handle": "null",
+    "dl_reply": "null",
+    "command_mode": "null",
+    "dl_params": "null"
+  }
+]

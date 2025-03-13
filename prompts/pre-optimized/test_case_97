@@ -1,0 +1,18 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a service request and then 
+The AMF sent gmm status to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: service request
+Subsequent Downlink message from the AMF: gmm status
+The downlink message from the AMF was sent as: Protected
+5G-AKA: Completed
+5GMM Cause: 100
+UE provided: No response
+
+The packet capture during the test using wireshark is: 
+1.321023941040039	UE to 	AMF	InitialUEMessage, Service request, Service request [RRCEstablishmentCause=mo-Data]
+1.3216829299926758	AMF to 	UE 	DownlinkNASTransport, 5GMM status (Conditional IE error)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

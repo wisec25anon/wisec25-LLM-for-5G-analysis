@@ -1,0 +1,23 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a registration request and then 
+The AMF sent authentication request to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: registration request
+Subsequent Downlink message from the AMF: authentication request
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Not completed yet
+ABBA: 0000
+RAND: 313030300000000078742b94d4550000
+AUTN: 00000000000000000000000000000000
+ngKSI_TSC: Native security context
+ngKSI_KSI: 7
+UE provided: 5GMM status (Invalid mandatory information)
+
+The packet capture during the test using wireshark is: 
+0.0	UE to 	AMF	InitialUEMessage, Registration request, Registration request [RRCEstablishmentCause=mo-Signalling]
+0.0005857944488525391	AMF to 	UE 	SACK (Ack=0, Arwnd=106496) , DownlinkNASTransport, Authentication request
+0.20240378379821777	UE to 	AMF	UplinkNASTransport, 5GMM status (Invalid mandatory information)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.

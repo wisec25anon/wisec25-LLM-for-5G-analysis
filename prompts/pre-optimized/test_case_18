@@ -1,0 +1,18 @@
+This is a security test for a 5G standalone User equipment (UE). The UE sent a identity response and then 
+The AMF sent gmm status to the UE. The test summary as follows: 
+ 
+Uplink message from the UE: identity response
+Subsequent Downlink message from the AMF: gmm status
+The downlink message from the AMF was sent as: Plain
+5G-AKA: Not completed yet
+5GMM Cause: 13
+UE provided: No response
+
+The packet capture during the test using wireshark is: 
+0.03987693786621094	UE to 	AMF	SACK (Ack=0, Arwnd=106496) , UplinkNASTransport, Identity response
+0.04032492637634277	AMF to 	UE 	SACK (Ack=1, Arwnd=106496) , DownlinkNASTransport, 5GMM status (Roaming not allowed in this tracking area)
+
+
+Did the UE behave securely? Compare the expected behavior of the UE with its actual actions. 
+Please walk through your thought process and provide your chain of thoughts to reach this conclusion.  
+Please also ensure that your response is in a paragraph format.
